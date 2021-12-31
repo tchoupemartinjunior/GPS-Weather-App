@@ -71,6 +71,51 @@ Etape 6
 	-Les paramètres sont passées comme chaine de caractère dans l’url
 	http://api.weatherstack.com/current?<b>access_key=" + weatherStackApi_KEY</b> + "&<b>query=" + adresse</b>;
 
+<b> la valeur de la temperature se trouve dans current->temperature voir exemple ci dessous</b>
 
-  	
-	  	
+query=51 allee du gamay , 34080 montpellier France
+
+http://api.weatherstack.com/current?access_key=fdf8a371822fd868f8806e703adacd4e&query=51 allee du gamay , 34080 montpellier France
+
+reponse 
+{
+    "request": {
+        "type": "City",
+        "query": "Montpellier, France",
+        "language": "en",
+        "unit": "m"
+    },
+    "location": {
+        "name": "Montpellier",
+        "country": "France",
+        "region": "Poitou-Charentes",
+        "lat": "45.633",
+        "lon": "-0.750",
+        "timezone_id": "Europe/Paris",
+        "localtime": "2021-12-31 20:08",
+        "localtime_epoch": 1640981280,
+        "utc_offset": "1.0"
+    },
+    "current": {
+        "observation_time": "07:08 PM",
+        "temperature": 12,
+        "weather_code": 122,
+        "weather_icons": [
+            "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png"
+        ],
+        "weather_descriptions": [
+            "Overcast"
+        ],
+        "wind_speed": 12,
+        "wind_degree": 109,
+        "wind_dir": "ESE",
+        "pressure": 1025,
+        "precip": 0,
+        "humidity": 79,
+        "cloudcover": 100,
+        "feelslike": 11,
+        "uv_index": 1,
+        "visibility": 10,
+        "is_day": "no"
+    }
+}
