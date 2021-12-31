@@ -53,14 +53,24 @@ L'annotation @Autowired nous épargne de devoir faire le câblage par nous-même
     - Je suis allé sur le site officiel de bootstrap
     - Ensuite j'ai copier les sources css et javascript et je l'ai collé dans la partie <head>( le css)  et <body>( le Javascript) de mon fichier html
 	  	
+-Application Meteo
+Etape 6
+
+<b>Faut-il une clé API pour appeler MeteoConcept ?</b><br>
+-J'ai utilisé non pas l’API meteo Concept mais plutôt <b>WeatherStack</b><br>
+-Pour utiliser cette API j’ai effectivement eu besoin d’une clé<br>
+
+<b>Quelle URL appeler ?</b><br>
+-"http://api.weatherstack.com/current?access_key=" + weatherStackApi_KEY + "&query=" + adresse;<br>
+
+<b>Quelle méthode HTTP utiliser ? ?</b><br>
+	-La méthode utilisée est le GET<br>
+
+<b>Comment passer les paramètres d`appels ? </b><br>
+	-On compte deux paramètres pour cet API : la Clé et l’Adresse<br>
+	-Les paramètres sont passées comme chaine de caractère dans l’url
+	http://api.weatherstack.com/current?<b>access_key=" + weatherStackApi_KEY</b> + "&<b>query=" + adresse</b>;
 
 
   	
-  	explication spring
-	  - pour afficher une page il faut juste une classe controller et un fichier html qui se trouvera dans le dossier template
-	  	dans le controller il faut rajouter une annotation controller
-	  	creer une methode qui retourne le fichier html souhaite
-	  	la methode sera annoté avec un getmapping("/nom_fichier")
-	  
-	  - 
 	  	
